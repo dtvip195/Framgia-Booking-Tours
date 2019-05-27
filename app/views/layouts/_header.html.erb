@@ -1,0 +1,45 @@
+<nav class="bg-blue-tiki navbar-custom">
+  <div class="navbar navbar-expand-md bg-blue-tiki navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="/" style="height: 40px; padding: 0; margin: 0">
+    <%= image_tag("logo.png", class: "img", alt: "S Travel")%>
+    </a>
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <%= link_to t(".tours"), "/index", class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to t(".reviews"), "#", class: "nav-link" %>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-user">
+      <% if user_signed_in? %>
+        <div class="nav-user">
+          <div class="dropdown">
+            <button type="button" class="btn btn-outline-light btn-user">
+              <%= link_to image_tag("architecture-buildings-business.jpg",
+                class: "rounded-circle", size: "28"), root_path %>
+              &nbsp;
+              <%= current_user.name %>
+            </button>
+            <div class="dropdown-content">
+              <%= link_to t(".profile"), edit_user_registration_path %>
+              <%= link_to t(".inf_tours"), user_path(current_user) %>
+              <%= link_to t(".logout"), destroy_user_session_path, method: :delete %>
+            </div>
+          </div>
+        </div>
+      <% else %>
+        <%= link_to t(".login"), new_user_session_path, class: "text-white" %>
+        <%= link_to image_tag("contacts.png", size: "28", alt: "S Travel"), new_user_session_path %>
+      <% end %>
+    </div>
+  </div>
+</nav>

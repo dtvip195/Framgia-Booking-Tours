@@ -1,0 +1,2 @@
+$('#comment_review_<%= @review.id %>').html('<%= j render partial: "comments/comment", locals: {review_id: @review} %>');
+$('#load_comment_form_<%= @review.id %>').html('');

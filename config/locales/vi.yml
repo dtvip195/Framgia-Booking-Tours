@@ -1,0 +1,460 @@
+vi:
+  base_title: "S Travel"
+  errs: "Có %{errors_count}."
+  msg_success: "Chúc mừng bạn đã đăng ký thành công."
+  err_login: "Tài khoản hoặc mật khẩu không đúng."
+  permission_denide: "Bạn không có quyền truy cập."
+  date: "Số ngày: "
+  review_success: "Cảm Ơn Đã Đánh Giá."
+  review_fail: "Review thất bại."
+  review_delete_success: "Xóa review thành công."
+  review_delete_fail: "Xóa review thất bại."
+  no_data: "Not Found 404."
+  like_fail: "Bạn đã like review này."
+  booking_fail: "Bạn đã nhập quá số lượng cho phép."
+  booking_fail1: "Bạn phải nhập đầy đủ thông tin."
+  booking_success: "Quý khách đã đặt tour thành công. Chân thành cảm ơn!!!"
+  fail: "Lỗi không xác định."
+  no_data: "Not Found 404"
+  like: "Like"
+  likes: "Likes"
+
+  #devise
+  email: "Email:"
+  password: "Mật khẩu:"
+  forgot_password: "Quên mật khẩu ?"
+  remember: "Nhớ mật khẩu"
+  signup_now: "Đăng ký ngay!"
+  resend_mail: "Gửi lại mail xác nhận!"
+  login: "Đăng nhập"
+  signup: "Đăng ký"
+  create: "Tạo tài khoản"
+  name: "Họ và tên:"
+  email: "Email:"
+  password_confirmation: "Nhập lại mật khẩu:"
+  current_password: "Mật khẩu hiện tại:"
+  phone_number: "Số điện thoại:"
+  login_now: "Đã có tài khoản? Đăng nhập"
+  submit: "Xác Nhận"
+  reset_pass: "Vui lòng nhập email của bạn để lấy lại mật khẩu."
+  reset_pass_title: "Lấy Lại Mật Khẩu"
+  new_pass: "Mật khẩu mới: "
+  reset_password: "Nhập mật khẩu mới:"
+  note_pass: "(để trống nếu bạn không muốn thay đổi)"
+  confirm_change: "(Nhập lại mật khẩu hiện tại để xác nhận thay đổi.)"
+  change_infor: "Đổi Thông Tin Tài Khoản"
+  sure?: "Are you sure?"
+  min_pass: "(Ít nhất %{min_pass} kí tự)"
+  delete_account: "Xóa Tài Khoản"
+  confirmation_instructions: "You can confirm your account email through the link below:"
+  confirm_account: "Confirm my account"
+  welcome: "Welcome %{email} !"
+  hello: "Hello %{email} !"
+  password_change: "We're contacting you to notify you that your password has been changed %{password_change}."
+  reset_password_instructions: "Someone has requested a link to change your password. You can do this through the link below."
+  reset_password_instructions_request: "If you didn't request this, please ignore this email. Your password won't change until you access the link above and create a new one."
+  change_pass: "Change my password"
+  delete_account: "Xóa Tài Khoản"
+  booking_success: "Booking Success"
+
+  #ActiveRecord
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            phonenumber:
+              too_long: "quá dài (tối đa %{count} ký tự)"
+              too_short: "quá ngắn (tối thiểu %{count} ký tự)"
+            name:
+              blank: "không thể để trống"
+
+  time:
+    formats:
+      defaut: "%H:%M %d/%m/%Y"
+      date: "%e/%m/%y"
+
+  #booking_mailer:
+  booking_mailer:
+    booking_email:
+      hello: "S Travel Xin chào Quý Khách %{name}!. Sau đây là thông tin đặt tour của Quý Khách:"
+      tour: "Tour: "
+      time_start: "Thời gian khởi hành: "
+      time_created: "Thời gian đặt tour: "
+      booking_quantity: "Số lượng: "
+      bill: "Tổng tiền: "
+      thanks: "Xin chân thành cảm ơn! Chúc Quý Khách một ngày vui vẻ!"
+      read_more: "Xem thêm"
+
+  #bookings
+  bookings:
+    new:
+      time_start: "Ngày khởi hành: "
+      price: "Giá tiền: "
+      booking_info: "Thông Tin Cá Nhân"
+      tour: "Thông Tin Tour"
+      quantity: "Số lượng có thể đặt: "
+
+    booking_form:
+      name: "*Họ và tên:"
+      phone_number: "*Số điện thoại:"
+      address: "*Địa chỉ:"
+      quantity: "*Số lượng khách:"
+      note: "Ghi chú:"
+      note1: "*Quý khách vui lòng nhập đầy đủ thông tin."
+      submit: "Xác nhận"
+
+  #comments:
+  comments:
+    comment:
+      post: "Đã đăng"
+      ago: "trước"
+
+    comment_form:
+      reply: "Gửi trả lời: "
+      send: "Gửi trả lời của bạn"
+
+    delete_comment:
+      delete: "Xóa"
+      sure: "You sure?"
+
+  #layouts
+  layouts:
+    header:
+      tours: "Tours"
+      reviews: "Bài viết"
+      login: "Đăng nhập"
+      profile: "Thông Tin Tài Khoản"
+      inf_tours: "Thông Tin Đặt Tours"
+      logout: "Đăng xuất"
+      user: "User"
+
+    footer:
+      about: "Về chúng tôi"
+      content: "Hệ thống đặt tour du lịch trực tuyến hàng đầu Việt Nam"
+      link: "Liên kết liên quan"
+      dk: "Điều kiện & Điều khoản"
+      qc: "Quy chế hoạt động"
+      question: "Câu hỏi thường gặp"
+      deal: "Tin khuyến mãi"
+      contact: "Liên hệ"
+      sp: "Tư vấn miễn phí (24/7):"
+      contact_phone1: "0123456789"
+      gopy: "Góp ý, phản ánh (8h00 - 22h00):"
+      contact_phone: "0987654321"
+      vp: "Văn phòng"
+      vp1: "13F Keangnam Hanoi Landmark 72 Tower, Plot E6, Pham Hung Road, Nam Tu Liem Dist., Ha Noi"
+      vp2: "4F, FHome Building, 16 Ly Thuong Kiet Str., Hai Chau district, Da Nang"
+      vp3: "8F Nice building, 467 Dien Bien Phu Str., Ward 25, Binh Thanh district, HCMC"
+      another_link: "Liên kết khác"
+      email: "Email: hotro@stravel.com"
+      youtube: "Youtube: S Travel"
+      fb: "Fanpage: fb.com/thanhdat128"
+      email1: "email"
+      location_on: "location_on"
+
+  #reviews
+  reviews:
+    review:
+      post: "Đã đăng"
+      ago: "trước"
+      unlike: "Unlike"
+      delete: "Xóa"
+      reply: "Trả lời"
+      edit: "Sửa"
+
+    review_form:
+      format: "image/jpeg,image/gif,image/png"
+      rating: "Đánh giá của bạn: "
+      review: "Viết nhận xét của bạn vào bên dưới:"
+      send: "Gửi nhận xét của bạn"
+
+    edit_review:
+      rating: "Đánh giá của bạn: "
+      edit_review: "Sửa nhận xét:"
+      submit: "Xác nhận"
+      format: "image/jpeg,image/gif,image/png"
+
+    create:
+      count: "%{count} đánh giá"
+
+    destroy:
+      count: "%{count} đánh giá"
+
+    delete_review:
+      delete: "Xóa"
+      sure: "You sure?"
+
+  #static_pages
+  static_pages:
+    home:
+      title: "Trang chủ"
+      new_tour: "Tour mới"
+      view_all: "Xem Tất Cả"
+
+    new_tour:
+      new_tour: "Tour mới"
+      view_all: "Xem Tất Cả"
+      location_name: "Địa điểm: "
+
+    search:
+      title: "Trải nghiệm kì nghỉ tuyệt vời"
+      title2: "Tìm tour giá tốt nhất"
+
+  #tours
+  tours:
+    show:
+      cofirm: "ĐẶT TOUR"
+      quantity: "Số khách: (còn"
+      slot: "chỗ)"
+      review: "Nhận Xét"
+      send: "Gửi"
+      tour_details: "Thông Tin Tour"
+      price: "Giá tiền: "
+      quantity: "Số chỗ còn lại: "
+      count: "%{count} đánh giá"
+      your_review: "GỬI NHẬN XÉT CỦA BẠN"
+
+    tour_details:
+      dates: "Ngày"
+      age_limit: "Giới Hạn Tuổi: 5"
+      hotel: "Khách Sạn"
+      vehicle: "Phương Tiện: "
+      time_start: "Khởi Hành: "
+      content: "Lịch Trình Tour"
+      updating: "Đang cập nhật ..."
+      avg_rating: "Điểm đánh giá trung bình: "
+
+    tour:
+      tours: "Tours"
+      locations: "ĐIỂM ĐẾN YÊU THÍCH"
+      tours: "Tours"
+      category: "Loại Hình: "
+      count: "Số Chỗ Đã Đặt: "
+      time_start: "Khởi Hành: "
+      detail: "Chi tiết"
+      dates: "Ngày"
+
+  #travellings
+  travellings:
+    index:
+      tours: "Danh Sách Tour"
+      locations: "ĐIỂM ĐẾN YÊU THÍCH"
+
+  #users
+  users:
+    show:
+      history_booking: "Lịch Sử Đặt Tour"
+      name_tour: "Tên Tour"
+      time_start: "Ngày Khởi Hành"
+      time_booking: "Ngày Đặt Tour"
+      quantity: "Số Lượng"
+      bill: "Tổng Tiền"
+
+  #admin
+  err_location: "Địa điểm này đã có."
+  add_location_success: "Thành Công"
+  update_location_success: "Thay đổi thành công"
+  update_location_failed: "Thay đổi không thành công"
+  del_location_success: "Xóa địa điểm thành công"
+  del_location_failed: "Xóa địa điểm thất bại"
+  update_travelling_success: "Thay đổi thành công"
+  update_travelling_failed: "Thay đổi không thành công"
+  del_travelling_success: "Xóa travel thành công"
+  del_travelling_failed: "Xóa travel thất bại"
+  add_travelling_success: "Thành Công"
+  err_tour: "Khong tim thay tour"
+  update_tour_success: "Thay đổi thành công"
+  update_tour_failed: "Thay đổi không thành công"
+  del_tour_success: "Xóa tour thành công"
+  del_tour_failed: "Xóa tour thất bại"
+
+  admins:
+    show:
+      admin: "Admin"
+      profile: "Thông tin"
+      logout: "Đăng xuất"
+      welcome: "Xin chào"
+    sidebar:
+      admin: "Admin"
+      dashboard: "Dashboard"
+      interface: "Interface"
+      manage: "Quản lí"
+      user: "Người dùng"
+      tour: "Tour"
+    footer:
+      copyright: Copyright
+      website: Framgia website
+
+  travellings:
+    index:
+      tours: "Danh Sách Tour"
+      locations: "ĐIỂM ĐẾN YÊU THÍCH"
+
+  admin:
+    admin_base:
+      header:
+        admin: "Admin"
+        profile: "Thông tin"
+        logout: "Đăng xuất"
+        search: "Search for..."
+        travelling: "Travelling"
+      sidebar:
+        admin: "Admin"
+        dashboard: "Dashboard"
+        interface: "Interface"
+        manage: "Quản lí"
+        user: "Người dùng"
+        tour: "Tour"
+        location: "Địa điểm"
+        booking: "Booking"
+      footer:
+        copyright: "Copyright"
+        website: "Framgia website"
+    locations:
+      form:
+        new: "Add new location"
+        submit: "Submit"
+      location:
+        edit: "Edit"
+        del: "Delete"
+      index:
+        id: "ID"
+        name: "NAME"
+        copyright: "Copyright"
+        website: "Framgia website"
+      edit:
+        new: "Change Name"
+        submit: "Update"
+    travellings:
+      index:
+        id : "Id"
+        start: "Start"
+        end: "End"
+        click: "Click here to create new travelling"
+      edit:
+        submit: "Submit"
+        start: "Start"
+        end: "End"
+      new:
+        submit: "Submit"
+      travelling:
+        edit: "Edit"
+        del: "Delete"
+    tours:
+      tour:
+        edit: "Edit"
+        del: "Del"
+      index:
+        id: "Id"
+        category: "Category"
+        price: "Price"
+        travelling: "Travelling"
+        time: "Time"
+        max: "Max"
+        recent: "Recent"
+        rating: "Rating"
+        click: "Click here to create new tour"
+        edit: "Edit"
+        del: "Delete"
+      new:
+        submit: "Submit"
+      edit:
+        submit: "Submit"
+    users:
+      index:
+        id: "Id"
+        email: "Email"
+        phonenumber: "Phonenumber"
+      user:
+        edit: "Edit"
+        del: "Delete"
+      show:
+        tour_id: "Tour Id"
+        quantity: "Quantity"
+        status: "Status"
+        bill: "Bill"
+    bookings:
+      index:
+        user_id: "User Id"
+        tour_id: "Tour Id"
+        quantity: "Quantity"
+        status: "Status"
+        bill: "Bill"
+        name: "Name"
+        phone: "Phonenumber"
+        address: "Address"
+        note: "Note"
+        export_excel: "Export Excel"
+        download: "Download: "
+        total_revenue: "Tổng doanh thu: %{revenue}"
+      booking:
+        refuse: "Refuse"
+        approve: "Approve"
+    static_pages:
+      show:
+        welcome: "Xin chào"
+
+  #devise
+  devise:
+    confirmations:
+      confirmed: "Your email address has been successfully confirmed."
+      send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."
+      send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes."
+    failure:
+      already_authenticated: "You are already signed in."
+      inactive: "Your account is not activated yet."
+      invalid: "Invalid %{authentication_keys} or password."
+      locked: "Your account is locked."
+      last_attempt: "You have one more attempt before your account is locked."
+      not_found_in_database: "Invalid %{authentication_keys} or password."
+      timeout: "Your session expired. Please sign in again to continue."
+      unauthenticated: "You need to sign in or sign up before continuing."
+      unconfirmed: "You have to confirm your email address before continuing."
+    mailer:
+      confirmation_instructions:
+        subject: "Confirmation instructions"
+      reset_password_instructions:
+        subject: "Reset password instructions"
+      unlock_instructions:
+        subject: "Unlock instructions"
+      email_changed:
+        subject: "Email Changed"
+      password_change:
+        subject: "Password Changed"
+    omniauth_callbacks:
+      failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
+      success: "Successfully authenticated from %{kind} account."
+    passwords:
+      no_token: "You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided."
+      send_instructions: "You will receive an email with instructions on how to reset your password in a few minutes."
+      send_paranoid_instructions: "If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes."
+      updated: "Your password has been changed successfully. You are now signed in."
+      updated_not_active: "Your password has been changed successfully."
+    registrations:
+      destroyed: "Bye! Your account has been successfully cancelled. We hope to see you again soon."
+      signed_up: "Welcome! You have signed up successfully."
+      signed_up_but_inactive: "You have signed up successfully. However, we could not sign you in because your account is not yet activated."
+      signed_up_but_locked: "You have signed up successfully. However, we could not sign you in because your account is locked."
+      signed_up_but_unconfirmed: "A message with a confirmation link has been sent to your email address. Please follow the link to activate your account."
+      update_needs_confirmation: "You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirm link to confirm your new email address."
+      updated: "Your account has been updated successfully."
+      updated_but_not_signed_in: "Your account has been updated successfully, but since your password was changed, you need to sign in again"
+    sessions:
+      signed_in: "Signed in successfully."
+      signed_out: "Signed out successfully."
+      already_signed_out: "Signed out successfully."
+    unlocks:
+      send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."
+      send_paranoid_instructions: "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes."
+      unlocked: "Your account has been unlocked successfully. Please sign in to continue."
+  errors:
+    messages:
+      already_confirmed: "was already confirmed, please try signing in"
+      confirmation_period_expired: "needs to be confirmed within %{period}, please request a new one"
+      expired: "has expired, please request a new one"
+      not_found: "not found"
+      not_locked: "was not locked"
+      not_saved:
+        one: "1 error prohibited this %{resource} from being saved:"
+        other: "%{count} errors prohibited this %{resource} from being saved:"

@@ -1,0 +1,52 @@
+size: 80
+location_per_page: 10
+travelling_per_page: 10
+xls: :xls
+
+user:
+  max_email: 255
+  min_pass: 6
+  max_name: 50
+
+  min_phone: 9
+  max_phone: 11
+
+sessions:
+  remember_me: "1"
+
+static_pages:
+  new_tours: 6
+
+tours:
+  per_page: 10
+
+review:
+  length_review: 10
+  picture_size: "than 5MB"
+  picture: 5
+  per_page: 5
+
+likes:
+  count_like: 1
+
+booking:
+  min_phone: 9
+  max_phone: 11
+  max_name: 50
+  quantity_value: 1
+  quantity_min: 1
+
+settings_mailer:
+  address: "127.0.0.1"
+  port: 25
+  domain: "yourdomain.com"
+
+smtp_settings:
+  address: "smtp.gmail.com"
+  port: 587
+  authentication: "plain"
+  enable_starttls_auto: true
+  openssl_verify_mode: "none"
+  localhost: "localhost"
+  port_localhost: 3000
+

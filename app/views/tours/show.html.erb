@@ -1,0 +1,50 @@
+<% provide :title, t(".tour_details") %>
+<div class="pb-4 pt-4">
+  <div class="container">
+    <div class="title-name-tour-detail">
+      <h2><%= @tour_details.title %></h2>
+    </div>
+    <div class="row">
+      <div class="col-md-8 order-md-first">
+        <%= render "tour_details" %>
+        <div class="border mt-4">
+          <% if user_signed_in? %>
+            <div class="container-comment border-bottom" id="review_form_<%= @tour_details.id %>">
+              <h4><%= t(".your_review") %></h4>
+              <%= render partial: "reviews/review_form", locals: {tour_id: @tour_details} %>
+            </div>
+          <% end %>
+          <div class="scrollbar pb-3" style="max-height: 800px">
+            <h2 style="text-align: center" id="count_review_<%= @tour_details.id %>">
+              <%= t(".count",count: @reviews.count) %>
+            </h2>
+            <div id="review_<%= @tour_details.id %>">
+              <%= render partial: "reviews/review", locals: {tour_id: @tour_details, review: @reviews} %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 order-sm-first order-first">
+        <% if user_signed_in? %>
+          <div class="container-book-tour sticky-top">
+            <h3 class="price-tour-detail">
+              <%= t(".price") %><%= number_to_currency(@tour_details.price) %>
+            </h3>
+            <h5 class="price-tour-detail">
+              <%= t(".quantity") %><%= @tour_details.max_quantity - @tour_details.recent_quantity %>
+            </h5>
+            <br>
+            <div class="form-group">
+              <% if check_booking_quantity @tour_details.max_quantity, @tour_details.recent_quantity %>
+                <% if check_time_start @tour_details.time_start.to_date %>
+                  <%= link_to t(".cofirm"), new_booking_path(tour_id: @tour_details.id),
+                    class: "btn btn-outline-light w-100" %>
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
